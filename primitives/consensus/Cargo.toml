@@ -1,0 +1,22 @@
+[package]
+name = "ap-consensus"
+version = "0.1.0"
+authors = ["hercules-network"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sp-std = { version = "3.0.0", default-features = false }
+sp-runtime = { version = "3.0.0", default-features = false }
+sp-core = { version = "3.0.0", default-features = false }
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false, features = ["derive"] }
+
+[features]
+default = ["std"]
+std = [
+    "sp-std/std",
+    "sp-runtime/std",
+    "sp-core/std",
+    "codec/std",
+]

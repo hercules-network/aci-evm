@@ -1,0 +1,21 @@
+[profile.release]
+panic = "unwind"
+
+[workspace]
+default-members = [
+    "primitives/*",
+    "frame/*",
+    "client/*",
+]
+
+members = [
+    "primitives/consensus",
+    "primitives/evm",
+    "primitives/rpc",
+    "frame/dynamic-fee",
+    "frame/ethereum",
+    "frame/evm",
+    "client/consensus",
+    "client/rpc",
+    "client/rpc-core",
+]
