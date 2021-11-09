@@ -21,7 +21,7 @@ extern crate alloc;
 
 use alloc::vec::Vec;
 use sp_core::U256;
-use fp_evm::LinearCostPrecompile;
+use ap_evm::LinearCostPrecompile;
 use evm::{ExitSucceed, ExitError};
 
 fn read_fr(input: &[u8], start_inx: usize) -> Result<bn::Fr, ExitError> {
